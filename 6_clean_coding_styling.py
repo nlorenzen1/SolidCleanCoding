@@ -67,7 +67,6 @@ if ((patient.has_cough) and (patient.is_sneezing)) or (patient.is_vomiting):
     is_sick = True
 
 #right
-
 class Patientt(object):
     def has_cough(self): #Could also be treated as private
         pass

@@ -16,16 +16,17 @@ def test_when_comma_seperated_string_is_given_then_a_lst_with_two_items_are_retu
 def test_a_blank_str_returns_len_of_1():
     assert len(string_to_lst("", ",")) == 1
 
-'''
-#uncomment to see a failure
-def test_a_null_str_returns_len_of_0():
-    assert len(string_to_lst("", ",")) == 1
-
-'''
 
 def test_a_null_str_returns_len_of_0():
     with pytest.raises(Exception):
         string_to_lst(None, ",")
+
+'''
+#uncomment to see a failure
+def test_a_null_str_returns_len_of_0():
+    assert len(string_to_lst(None, ",")) == 1
+'''
+
 
 
 '''
@@ -33,7 +34,7 @@ Don't test network/file/db calls.
 
 SEPERATE your logic from the network/file/db calls to make testing easier
 
-Refer back to Dependency Injection for helping with network/file/db calls abstraction
+Refer back to Dependency Injection (D in SOLID) for helping with network/file/db calls abstraction
 '''
 
 ### we are going to create a simple mock here b/c we may or maynot have a file

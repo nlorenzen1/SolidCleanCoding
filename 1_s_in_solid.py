@@ -24,6 +24,7 @@ class TextChecker(object):
 
 #Right:
 
+#Single responsiblity to read files
 class FileReader(object):
 
     def read_file(self, file_name):
@@ -31,6 +32,7 @@ class FileReader(object):
             return f.read()
 
 
+#Single responsiblity to check for text
 class TextCheckerr(object):
 
     def contains_text(self, input_text, val_to_check_for):

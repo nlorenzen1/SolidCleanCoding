@@ -31,6 +31,10 @@ except Exception as e:
     print("Hit the following error:", e)
 
 
+#Exception to this rule are sitations where the program must keep going despite the failure
+
+
+
 '''
 Avoid sending returning and passing in nulls!
 '''
@@ -46,8 +50,6 @@ def process_users():
            pass #do some work on users
 
 #right:
-
-#wrong:
 def get_users_from_dbb():
     return [] #returns a empty list if the previous lines of code calling the db has zero users
 
